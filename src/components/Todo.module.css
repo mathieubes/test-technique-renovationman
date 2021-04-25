@@ -1,0 +1,47 @@
+.postIt {
+    padding: 32px;
+    background-color: var(--yellow-post-it);
+    box-shadow: var(--hard-drop-shadow);
+    border-radius: 32px;
+    aspect-ratio: 1;
+
+    transition: opacity 250ms ease-out;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: var(--black);
+    font-size: 18px;
+}
+
+.trashButton {
+    cursor: pointer;
+}
+
+.text {
+    font-size: 14px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.createdAt {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--light-grey);
+    background-color: white;
+    border-radius: 16px;
+}

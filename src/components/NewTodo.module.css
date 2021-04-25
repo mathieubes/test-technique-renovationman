@@ -1,0 +1,54 @@
+/* Unselected post-it */
+.placeholder {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(242, 242, 242, 0.5);
+    border: 2px dashed var(--grey);
+    border-radius: 32px;
+    cursor: pointer;
+    aspect-ratio: 1;
+
+    transition: background-color 200ms ease-in-out;
+}
+
+.placeholder:hover {
+    background-color: rgba(242, 242, 242, 0.7)
+}
+
+.placeholderFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Selected post-it */
+.editingFlex {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6px;
+}
+
+.editingFlex > input, .editingFlex > button {
+    margin-bottom: 32px;
+}
+
+.btn {
+    padding: 12px 0;
+    font-weight: 600;
+    color: var(--gray);
+    background-color: var(--yellow-accent);
+    border-radius: 16px;
+    box-shadow: var(--light-skeue-shadow);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--yellow-accent-secondary)
+}
+
+.checkIcon {
+    align-self: center;
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+}

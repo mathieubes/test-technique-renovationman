@@ -1,0 +1,23 @@
+.darkBackgroundCover {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 64px);
+    z-index: -1;
+    background-color: var(--black);
+    opacity: 0.2;
+}
+
+.mainContainer {
+    margin: 64px 24px;
+    margin-top: 128px;
+}
+
+@media screen and (min-width: 768px) {
+    .mainContainer {
+        margin: 64px 80px;
+        margin-top: 128px;
+        height: min-content;
+    }
+}

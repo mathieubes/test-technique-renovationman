@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,300;1,400&display=swap');
+
+:root {
+    /* Colors */
+    --yellow-post-it: #FFF3D2;
+    --yellow-accent: #F2C94C;
+    --yellow-accent-secondary: #ecc347;
+    --black: #333333;
+    --grey: #4F4F4F;
+    --light-grey: #828282;
+
+    /* Shadows */
+    --hard-drop-shadow: 0px 4px 15px rgba(black, 0.25);
+    --light-skeue-shadow: 0px 6px 10px rgba(94, 94, 94, 0.1);
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    background: url('assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: var(--grey);
+    font-family: 'Work Sans', sans-serif;
+}
+
+input, button {
+    border: none;
+}
+
+input[type=text] {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--grey);
+    background: transparent;
+
+    transition: border-color 200ms ease-out;
+}
+
+input[type=text]::placeholder {
+    font-weight: 300;
+    font-style: italic;
+}
